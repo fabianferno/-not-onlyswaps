@@ -42,48 +42,19 @@ export function Sidebar() {
           <span>why us</span>
         </Link>
       </nav>
-
-      {/* Version */}
-      <div className="mb-8">
-        <div className="text-gray-600 text-sm px-4 py-2">Version 0.1.0</div>
-      </div>
-
-      {/* Theme toggles */}
-      <div className="flex gap-2 mb-6 px-4">
-        <button className="p-2 hover:text-orange-500 text-gray-400 transition-colors">
-          <Sun className="w-4 h-4" />
-        </button>
-        <button className="p-2 hover:text-orange-500 text-gray-400 transition-colors">
-          <Moon className="w-4 h-4" />
-        </button>
-        <button className="p-2 hover:text-orange-500 text-gray-400 transition-colors">
-          <Monitor className="w-4 h-4" />
-        </button>
-      </div>
-
-      {/* Settings and Close */}
-      <div className="space-y-3 mb-6 border-t border-gray-800 pt-4">
-        <button className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white transition-colors">
-          <Settings className="w-4 h-4" />
-          <span>Settings</span>
-        </button>
-        <button className="flex items-center gap-2 px-4 py-2 text-gray-400 hover:text-white transition-colors">
-          <ArrowLeft className="w-4 h-4" />
-          <span>Close</span>
-        </button>
-      </div>
+ 
 
       {/* Connect Wallet Button */}
-      <div className="w-full">
+      <div className="w-full scale-60 -ml-10">
         <ConnectButton />
       </div>
 
       {/* Footer */}
-      <div className="text-center text-gray-600 text-xs mt-6 pt-6 border-t border-gray-800">
+      <div className="text-center text-gray-600 text-xs mt-3 pt-6 border-t border-gray-800">
         <p>Powered by</p>
         <div className="flex items-center justify-center gap-1 mt-1">
-          <div className="w-3 h-3 bg-white transform -rotate-45"></div>
-          <span>daipher</span>
+         
+          <span className="font-bold">stateless</span>
         </div>
       </div>
     </div>

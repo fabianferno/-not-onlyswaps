@@ -3,7 +3,7 @@
 import * as React from "react"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { WagmiProvider, createConfig, http } from "wagmi"
-import { RainbowKitProvider, getDefaultConfig } from "@rainbow-me/rainbowkit"
+import { RainbowKitProvider, getDefaultConfig, darkTheme } from "@rainbow-me/rainbowkit"
 import { mainnet, sepolia, base, optimism, arbitrum } from "wagmi/chains"
 import { LOCAL_CHAIN_1, LOCAL_CHAIN_2 } from "@/lib/chains"
 import type { Config } from "wagmi"
@@ -97,7 +97,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         {mounted ? (
-          <RainbowKitProvider>
+          <RainbowKitProvider theme={darkTheme()}>
             {children}
           </RainbowKitProvider>
         ) : (
