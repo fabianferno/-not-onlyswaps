@@ -39,7 +39,7 @@ export function Sidebar() {
           }`}
         >
           <div className="w-4 h-4 bg-gradient-to-br from-orange-500 to-orange-400 transform -rotate-45"></div>
-          <span>why us</span>
+          <span>why another solver?</span>
         </Link>
       </nav>
  

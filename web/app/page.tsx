@@ -66,7 +66,8 @@ export default function Home() {
           </div>
 
           {/* Main Content */}
-          <h1 className="text-7xl font-bold text-white mb-8 text-center">only</h1>
+          <span className="text-7xl font-bold text-white mb-8 text-center">(not)<span className="text-orange-500">OnlySwaps</span>
+            </span>
 
           <div className="max-w-2xl text-center mb-12">
             <p className="text-xl text-gray-400 mb-6">
